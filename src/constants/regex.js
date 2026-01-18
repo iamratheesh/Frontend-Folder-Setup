@@ -1,0 +1,24 @@
+// eslint-disable-next-line no-control-regex
+export const EMAIL = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i;
+export const EMAIL_CHARS = /^[+\-_.@a-zA-Z0-9]+$/i;
+export const NAME = /^[A-Z][a-z]*(?:[-' ]?[a-z]+)*(?:[-' ]?[A-Z][a-z]*(?:[-' ]?[a-z]+)*)*$/;
+export const PASSWORD = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[~!@#$%^&*|\\/<>()+=\-_])[A-Za-z\d~!@#$%^&*|\\/<>()+=\-_]{8,32}$/;
+export const ISALNUMHYP = /^[A-Z0-9_-]+$/;
+export const ISUSERNAME = /^[A-Za-z0-9!#$%&'*+,./:;<=>?@^_`{|}~()-]+$/;
+export const ISALNUMHYPCASE = /^[a-zA-Z0-9_\s]+$/;
+export const ISALNUM = /^[a-zA-Z0-9\s]+$/;
+export const ISALNUMSTRICT = /^[A-Z0-9]+$/;
+export const NUMBER = /^-?\d*\.?\d+$/;
+export const PHONE_ADVANCED = /^\+?\(?([0-9]{1,3})\)?[-. ]?([0-9]{0,5})[-. ]?([0-9-]{4,11})$/gm;
+export const PHONE = /^\+\d{1,18}$/i;
+export const PRICE = /^\d+(,\d+)*(\.\d+)?\d+$/;
+export const DATE_ISOSTRING =/(\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+([+-][0-2]\d:[0-5]\d|Z))|(\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z))|(\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z))/;
+export const IS_JSON = /^[\s]*\{[\s\S]*\}[\s]*$/;
+export const URL_VALIDATOR = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_+.~#?&/=]*)$/;
+export const IP_REGEX =/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/\d{1,2}|(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+export const DATE_STRING = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
+export const RANK = /^(?:[1-9]\d*(?:\.\d+)?|[a-zA-Z\s]+)$/;
+export const PERCENTAGE = /^(100(\.0{1,2})?|([1-9]?\d)(\.\d{1,2})?)$/;
+export const NAME_AND_SPACE = /^[a-zA-Z\s]*$/;
+export const YEAR = /^(19|20)\d{2}$/;
+export const ADDRESS = /^[a-zA-Z0-9\s\-/,]*$/;

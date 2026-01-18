@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'ArticulatCF';
+  src: url('./assets/fonts/fonnts.com-Articulat_CF_Extra_Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArticulatCF';
+  src: url('./assets/fonts/fonnts.com-Articulat_CF_Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArticulatCF';
+  src: url('./assets/fonts/fonnts.com-Articulat_CF_Normal.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArticulatCF';
+  src: url('./assets/fonts/fonnts.com-Articulat_CF_Demi_Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArticulatCF';
+  src: url('./assets/fonts/fonnts.com-Articulat_CF_Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Global reset and font usage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ArticulatCF', sans-serif;
+}
+
+.css-avry0a {
+  margin: 0 !important;
+}

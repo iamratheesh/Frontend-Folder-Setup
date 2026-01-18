@@ -1,0 +1,100 @@
+// **Flexbox Mixins**
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-start($direction: row) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: $direction;
+}
+
+@mixin flex-end($direction: row) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: $direction;
+}
+
+@mixin flex-space-between($direction: row) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-space-around($direction: row) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flex-space-evenly($direction: row) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// **Grid Mixins**
+@mixin grid-container($columns: 12, $gap: 16px) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin grid-auto-rows($size: auto) {
+  grid-auto-rows: $size;
+}
+
+@mixin grid-column($start: auto, $end: auto) {
+  grid-column: $start / $end;
+}
+
+@mixin grid-row($start: auto, $end: auto) {
+  grid-row: $start / $end;
+}
+
+@mixin grid-area($name: auto) {
+  grid-area: $name;
+}
+
+// **Responsive Media Queries**
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// **Utility Mixins**
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin circle($size: 50px) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}

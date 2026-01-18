@@ -1,0 +1,110 @@
+// **Color Palette**
+$white: #fff;
+$black: #262626;
+$gray: #f0f0f0;
+$light-gray: #fafafa;
+$dark-gray: #6c6c6c;
+$light-green: #519872;
+$dark-green: #3e6f58;
+$red: #FF4D4F;
+$light-pink: #f3d9e2;
+$light-blue: #e7f6fc;
+$blue: #1890ff;
+$yellow: #fadb14;
+
+$primary-color: #15df15;
+$placeHolder-color:#a8a8a8;
+$secondary-color: #f2e6ff;
+$background-color: $light-gray;
+$text-color: $dark-gray;
+$link-color: $blue;
+$link-hover-color: darken($blue, 10%);
+$error-color: $red;
+$success-color: #15df15;
+$warning-color: $yellow;
+
+// Priority colors
+$minimal: #86efac;
+$severe: #fecaca;
+$moderate: #fef08a;
+$critical: #fca5a5;
+$unclassified: #bfdbfe;
+
+// **Typography**
+
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-large: 24px;
+$font-size-extra-large: 32px;
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+$font-weight-normal: 400;
+$font-weight-base: 500;
+$font-weight-bold: 700;
+
+// **Spacing**
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 40px;
+
+// **Padding Utilities**
+$padding-xxs: $spacing-xxs;
+$padding-xs: $spacing-xs;
+$padding-sm: $spacing-sm;
+$padding-md: $spacing-md;
+$padding-lg: $spacing-lg;
+$padding-xl: $spacing-xl;
+$padding-xxl: $spacing-xxl;
+
+// **Margin Utilities**
+$margin-xxs: $spacing-xxs;
+$margin-xs: $spacing-xs;
+$margin-sm: $spacing-sm;
+$margin-md: $spacing-md;
+$margin-lg: $spacing-lg;
+$margin-xl: $spacing-xl;
+$margin-xxl: $spacing-xxl;
+
+// **Breakpoints**
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1440px;
+
+// **Border Radius**
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-full: 9999px;
+$border-radius-half: 50%;
+
+// **Box Shadow**
+$box-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+$box-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-xl: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+// **Transitions**
+$transition-base: 0.3s ease-in-out;
+$transition-fast: 0.2s ease-in-out;
+$transition-slow: 0.5s ease-in-out;
+
+// **Z-Index**
+$z-index-dropdown: 1000;
+$z-index-modal: 1050;
+$z-index-tooltip: 1100;
+
+// **Miscellaneous**
+$max-content-width: 1200px;
+$global-padding: $spacing-md;
+$global-margin: $spacing-md;
+
+// **Utility**
+$opacity-disabled: 0.6;
+$opacity-hover: 0.8;
+$gutter-width: $spacing-lg;

@@ -1,13 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="%APP_LANG%">
   <head>
+    <!-- =========================
+         Core Document Meta
+    ========================== -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+
+    <!-- =========================
+         App Identity
+    ========================== -->
+    <title>%APP_TITLE%</title>
+    <meta name="title" content="%APP_TITLE%" />
+    <meta name="description" content="%APP_DESCRIPTION%" />
+    <meta name="keywords" content="%APP_KEYWORDS%" />
+    <meta name="author" content="%APP_AUTHOR%" />
+
+    <!-- =========================
+         Favicon / App Icon
+    ========================== -->
+    <link rel="icon" type="image/svg+xml" href="%APP_FAVICON%" />
+
+    <!-- =========================
+         Canonical & Indexing
+    ========================== -->
+    <link rel="canonical" href="%APP_CANONICAL_URL%" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="%APP_LANG%" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- =========================
+         Open Graph (Facebook / LinkedIn)
+    ========================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%APP_URL%" />
+    <meta property="og:title" content="%APP_TITLE%" />
+    <meta property="og:description" content="%APP_DESCRIPTION%" />
+    <meta property="og:image" content="%APP_OG_IMAGE%" />
+    <meta property="og:site_name" content="%APP_NAME%" />
+
+    <!-- =========================
+         Twitter Card
+    ========================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="%APP_URL%" />
+    <meta name="twitter:title" content="%APP_TITLE%" />
+    <meta name="twitter:description" content="%APP_DESCRIPTION%" />
+    <meta name="twitter:image" content="%APP_OG_IMAGE%" />
+
+    <!-- =========================
+         Optional: Theme Color (PWA / Mobile)
+    ========================== -->
+    <meta name="theme-color" content="%APP_THEME_COLOR%" />
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- =========================
+         Application Entry
+    ========================== -->
+    <script type="module" src="%APP_ENTRY%"></script>
   </body>
 </html>
